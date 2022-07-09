@@ -726,9 +726,9 @@ class Upgrader {
       _sendUserToAppStore();
     }
 
-    if (shouldPop) {
-      popNavigator(context);
-    }
+    // if (shouldPop) {
+    //   popNavigator(context);
+    // }
   }
 
   static Future<void> clearSavedSettings() async {
