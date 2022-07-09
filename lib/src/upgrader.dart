@@ -793,6 +793,9 @@ class Upgrader {
 
     if (await canLaunchUrl(Uri.parse(_appStoreListingURL!))) {
       try {
+        if (UpgradeIO.isIOS) {
+          await launchUrl(Uri.parse(_appStoreListingURL!);
+        }
         await launchUrl(Uri.parse(_appStoreListingURL!),
             mode: LaunchMode.externalNonBrowserApplication);
       } catch (e) {
